@@ -1,2 +1,3 @@
-# notessential.github.io
-Simply hosts a basic HTML file that tells people to access the main website. For... overly curious people, just in case.
+# usevital.github.io
+
+Hosts a basic HTML file with redirect buttons for the many projects under the Vital umbrella.
