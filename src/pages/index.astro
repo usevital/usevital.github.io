@@ -1,4 +1,5 @@
 ---
+import Button from "../components/Button.astro";
 import Logo from "../components/Logo.astro";
 import VitalLink from "../components/VitalLink.astro";
 import Default from "../layouts/Default.astro";
@@ -15,16 +16,8 @@ import Default from "../layouts/Default.astro";
 					resource pack features, shaders, and a major improvement in rendering and logic performance.</span
 				>
 				<div class="flex flex-row flex-wrap items-center gap-2">
-					<span class="button">
-						<VitalLink external={true} showIcon={true} to="https://modrinth.com/modpack/vital">
-							Modrinth
-						</VitalLink>
-					</span>
-					<span class="button">
-						<VitalLink external={true} showIcon={true} to="https://github.com/intergrav/vital">
-							Github
-						</VitalLink>
-					</span>
+					<Button to="https://modrinth.com/modpack/vital/" external={true} showIcon={true}> Modrinth </Button>
+					<Button to="https://github.com/intergrav/vital/" external={true} showIcon={true}> Github </Button>
 				</div>
 			</div>
 			<div class="flex w-full flex-col gap-2 border-b bg-gradient-to-bl from-black to-brand-blue-dark p-8">
@@ -32,16 +25,27 @@ import Default from "../layouts/Default.astro";
 				<span>NotEssential is a website which links to mods that can substitute Essential's features.</span>
 
 				<div class="flex flex-row flex-wrap items-center gap-2">
-					<span class="button bg-brand-blue">
-						<VitalLink external={true} showIcon={true} to="https://notessential.blurry.gay">
-							Visit Site
-						</VitalLink>
-					</span>
-					<span class="button bg-brand-blue">
-						<VitalLink external={true} showIcon={true} to="https://github.com/usevital/notessential">
-							Github
-						</VitalLink>
-					</span>
+					<Button
+						to="https://notessential.blurry.gay/"
+						classList="bg-brand-blue"
+						external={true}
+						showIcon={true}>
+						Visit
+					</Button>
+					<Button
+						to="https://usevital.github.io/notessential-gallery/"
+						classList="bg-brand-blue"
+						external={true}
+						showIcon={true}>
+						Gallery
+					</Button>
+					<Button
+						to="https://github.com/usevital/notessential"
+						classList="bg-brand-blue"
+						external={true}
+						showIcon={true}>
+						Github
+					</Button>
 				</div>
 			</div>
 			<div class="grid w-full grid-cols-1 border-b md:grid-cols-2">
@@ -52,16 +56,20 @@ import Default from "../layouts/Default.astro";
 						>Ward is a simple text manipulator for the web. Made to do silly translations for NotEssential.</span
 					>
 					<div class="flex flex-row flex-wrap items-center gap-2">
-						<span class="button bg-brand-green">
-							<VitalLink external={true} showIcon={true} to="https://ward.worldwidepixel.ca">
-								Visit
-							</VitalLink>
-						</span>
-						<span class="button bg-brand-green">
-							<VitalLink external={true} showIcon={true} to="https://github.com/usevital/ward">
-								Github
-							</VitalLink>
-						</span>
+						<Button
+							to="https://ward.worldwidepixel.ca"
+							classList="bg-brand-green"
+							external={true}
+							showIcon={true}>
+							Visit
+						</Button>
+						<Button
+							to="https://github.com/usevital/ward"
+							classList="bg-brand-green"
+							external={true}
+							showIcon={true}>
+							Github
+						</Button>
 					</div>
 				</div>
 				<div class="flex w-full flex-col gap-2 border-l bg-gradient-to-bl from-black to-cyan-900 p-8">
@@ -72,11 +80,13 @@ import Default from "../layouts/Default.astro";
 						>A python script that can help you convert and manipulate your text in many different ways.</span
 					>
 					<div class="flex flex-row flex-wrap items-center gap-2">
-						<span class="button bg-cyan-700">
-							<VitalLink external={true} showIcon={true} to="https://github.com/usevital/translator">
-								Github
-							</VitalLink>
-						</span>
+						<Button
+							to="https://github.com/usevital/translator"
+							classList="bg-cyan-700"
+							external={true}
+							showIcon={true}>
+							Github
+						</Button>
 					</div>
 				</div>
 			</div>

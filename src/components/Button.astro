@@ -1,0 +1,9 @@
+---
+import VitalLink from "./VitalLink.astro";
+
+const { external, showIcon, to, classList } = Astro.props;
+---
+
+<span class={"button " + classList}>
+	<VitalLink external={external} showIcon={showIcon} to={to}><slot /></VitalLink>
+</span>
