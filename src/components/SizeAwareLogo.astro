@@ -1,0 +1,9 @@
+---
+import Logotype from "./Logotype.astro";
+import Logo from "./Logo.astro";
+
+const { type, fill } = Astro.props;
+---
+
+<span class="hidden lg:block"><Logotype type={type} fill={fill} /></span>
+<span class="block lg:hidden"><Logo type={type} fill={fill} /></span>
