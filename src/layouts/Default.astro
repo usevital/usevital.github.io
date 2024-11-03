@@ -1,109 +1,103 @@
 ---
-import "../components/Logotype.astro";
-import Logotype from "../components/Logotype.astro";
-import VitalLink from "../components/VitalLink.astro";
-import { MessageSquare, Github } from "lucide-astro";
-import "../styles/global.css";
-import SizeAwareLogo from "../components/SizeAwareLogo.astro";
+import "../components/Logotype.astro"
+import Logotype from "../components/Logotype.astro"
+import VitalLink from "../components/VitalLink.astro"
+import { MessageSquare, Github } from "lucide-astro"
+import "../styles/global.css"
+import SizeAwareLogo from "../components/SizeAwareLogo.astro"
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
 <html class="h-full bg-brand-background text-brand-text">
-	<head>
-		<title>{title ? title + " | Vital" : "Vital"}</title>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="title" content="Home - Vital" />
-		<meta
-			name="description"
-			content="Alternative to the Essential mod with world hosting features, free cosmetics, and much more!"
-		/>
-		<meta name="keywords" content="minecraft,notessential,vital,bulb,ward,text,fabric,modpack" />
-		<meta name="robots" content="index" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="language" content="English" />
-		<meta name="author" content="Vital" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Vital" />
-		<meta property="og:url" content="https://usevital.github.io" />
-		<meta property="og:image" content="https://usevital.github.io/og.png" />
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta
-			property="og:description"
-			content="Alternative to the Essential mod with world hosting features, free cosmetics, and much more!"
-		/>
-	</head>
-	<body class="flex h-dvh flex-col">
-		<nav class="flex w-full flex-row justify-center border-b">
-			<div class="flex w-full max-w-[80rem] flex-row items-center justify-center gap-4 px-6 sm:justify-between">
-				<div class="grid w-full grid-cols-4 border-x">
-					<a
-						href="https://modrinth.com/modpack/vital"
-						class="centre flex h-20 bg-brand-purple p-6 transition active:bg-brand-purple-dark">
-						<SizeAwareLogo fill={true} type="vital" />
-					</a>
-					<a
-						href="https://notessential.blurry.gay"
-						class="centre h-20 border-l bg-brand-blue p-6 transition active:bg-brand-blue-dark">
-						<SizeAwareLogo fill={true} type="ne" />
-					</a>
-					<a
-						href="https://ward.worldwidepixel.ca"
-						class="centre h-20 border-l bg-brand-green p-6 transition active:bg-brand-green-dark">
-						<SizeAwareLogo fill={true} type="ward" />
-					</a>
-					<a
-						class="centre h-20 cursor-not-allowed border-l bg-brand-rose p-6 transition active:bg-brand-rose-dark">
-						<SizeAwareLogo fill={true} type="bulb" />
-						<span
-							class="text-md absolute rotate-6 select-none rounded-lg bg-brand-rose-dark bg-opacity-60 p-1 sm:text-lg"
-							>STAY TUNED</span
-						>
-					</a>
-				</div>
-			</div>
-		</nav>
-		<main class="flex w-full flex-auto flex-row justify-center">
-			<div class="w-full max-w-[80rem] p-6">
-				<slot />
-			</div>
-		</main>
-		<footer class="flex w-full flex-row justify-center border-t">
-			<div class="w-full max-w-[80rem] px-6">
-				<div class="grid w-full grid-cols-1 border-x sm:grid-cols-2 lg:grid-cols-4">
-					<div class="flex flex-col gap-3 bg-brand-purple-dark p-6 [&>*]:fill-brand-purple-light">
-						<Logotype fill={true} />
-						<span class="flex flex-row flex-wrap items-center gap-1 text-brand-text-secondary">
-							This page is
-							<VitalLink
-								showIcon={true}
-								external={true}
-								to="https://github.com/usevital/usevital.github.io">
-								open source.
-							</VitalLink>
-						</span>
-					</div>
-					<div class="flex flex-col gap-2 border-l bg-brand-blue-dark p-6">
-						<span class="font-bold">About</span>
-						We're a group of cool people making cool things.
-					</div>
-					<div class="flex flex-col gap-2 border-l bg-brand-green-dark p-6">
-						<span class="font-bold">Interact</span>
-						<VitalLink external={true} to="https://discord.gg/wncdz7e8jy"
-							><MessageSquare />Discord</VitalLink
-						>
-						<VitalLink external={true} to="https://github.com/usevital"><Github />GitHub</VitalLink>
-					</div>
-					<div class="flex flex-col gap-2 border-l bg-brand-rose-dark p-6">
-						<span class="font-bold">Extra</span>
-						<span>&copy; 2024 Vital contributors</span>
-						<span>Site by WorldWidePixel</span>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
+  <head>
+    <title>{title ? title + " | Vital" : "Vital"}</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="title" content="Home - Vital" />
+    <meta
+      name="description"
+      content="Alternative to the Essential mod with world hosting features, free cosmetics, and much more!"
+    />
+    <meta name="keywords" content="minecraft,notessential,vital,bulb,ward,text,fabric,modpack" />
+    <meta name="robots" content="index" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Vital" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vital" />
+    <meta property="og:url" content="https://usevital.github.io" />
+    <meta property="og:image" content="https://usevital.github.io/og.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:description"
+      content="Alternative to the Essential mod with world hosting features, free cosmetics, and much more!"
+    />
+  </head>
+  <body class="flex h-dvh flex-col">
+    <nav class="flex w-full flex-row justify-center border-b">
+      <div class="flex w-full max-w-[80rem] flex-row items-center justify-center gap-4 px-6 sm:justify-between">
+        <div class="grid w-full grid-cols-4 border-x">
+          <a
+            href="https://modrinth.com/modpack/vital"
+            class="centre flex h-20 bg-brand-purple p-6 transition active:bg-brand-purple-dark">
+            <SizeAwareLogo fill={true} type="vital" />
+          </a>
+          <a
+            href="https://notessential.blurry.gay"
+            class="centre h-20 border-l bg-brand-blue p-6 transition active:bg-brand-blue-dark">
+            <SizeAwareLogo fill={true} type="ne" />
+          </a>
+          <a
+            href="https://ward.worldwidepixel.ca"
+            class="centre h-20 border-l bg-brand-green p-6 transition active:bg-brand-green-dark">
+            <SizeAwareLogo fill={true} type="ward" />
+          </a>
+          <a class="centre h-20 cursor-not-allowed border-l bg-brand-rose p-6 transition active:bg-brand-rose-dark">
+            <SizeAwareLogo fill={true} type="bulb" />
+            <span
+              class="text-md absolute rotate-6 select-none rounded-lg bg-brand-rose-dark bg-opacity-60 p-1 sm:text-lg"
+              >STAY TUNED</span
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main class="flex w-full flex-auto flex-row justify-center">
+      <div class="w-full max-w-[80rem] p-6">
+        <slot />
+      </div>
+    </main>
+    <footer class="flex w-full flex-row justify-center border-t">
+      <div class="w-full max-w-[80rem] px-6">
+        <div class="grid w-full grid-cols-1 border-x sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col gap-3 bg-brand-purple-dark p-6 [&>*]:fill-brand-purple-light">
+            <Logotype fill={true} />
+            <span class="flex flex-row flex-wrap items-center gap-1 text-brand-text-secondary">
+              This page is
+              <VitalLink showIcon={true} external={true} to="https://github.com/usevital/usevital.github.io">
+                open source.
+              </VitalLink>
+            </span>
+          </div>
+          <div class="flex flex-col gap-2 border-l bg-brand-blue-dark p-6">
+            <span class="font-bold">About</span>
+            We're a group of cool people making cool things.
+          </div>
+          <div class="flex flex-col gap-2 border-l bg-brand-green-dark p-6">
+            <span class="font-bold">Interact</span>
+            <VitalLink external={true} to="https://discord.gg/wncdz7e8jy"><MessageSquare />Discord</VitalLink>
+            <VitalLink external={true} to="https://github.com/usevital"><Github />GitHub</VitalLink>
+          </div>
+          <div class="flex flex-col gap-2 border-l bg-brand-rose-dark p-6">
+            <span class="font-bold">Extra</span>
+            <span>&copy; 2024 Vital contributors</span>
+            <span>Site by WorldWidePixel</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
