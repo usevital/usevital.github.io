@@ -1,62 +1,62 @@
 ---
-const { type, fill } = Astro.props;
+const { type, fill } = Astro.props
 ---
 
 <svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" id="svg99543" xmlns="http://www.w3.org/2000/svg">
-	<defs id="defs99540"></defs>
-	{
-		type === "bulb" && (
-			<g id="bulb" style="display:inline" transform="translate(-1e-4)">
-				<path
-					id="rect62209-6"
-					style={{ fill: fill ? "#fcedf1ff" : "#e4306a" }}
-					d="m 4.9997005,5e-7 v 5.0002 H 19.999801 V 5e-7 Z m 15.0001005,5.0002 v 4.9997 h 5.0002 v -4.9997 z m 0,4.9997 H 4.9997005 V 15.0001 H 19.999801 Z m -15.0001005,0 v -4.9997 H 5e-7 v 4.9997 z M 9.9999015,19.9998 V 25 h 4.9996995 v -5.0002 z"
-				/>
-			</g>
-		)
-	}
-	{
-		type === "ward" && (
-			<g id="ward" style="display:inline" transform="translate(-1e-4)">
-				<path
-					id="rect8361-0-7"
-					style={{ fill: fill ? "#eefcf6" : "#01b477" }}
-					d="M 10.000201,5.0000001e-7 V 9.9997005 H 5e-7 V 14.999901 H 10.000201 V 24.9996 H 15.0005 v -5.0002 h 4.9998 V 14.999901 H 25 V 9.9997005 h -4.9997 v -4.9995 H 15.0005 V 5.0000001e-7 Z"
-				/>
-			</g>
-		)
-	}
-	{
-		type === "ne" && (
-			<g id="ne" style="display:inline" transform="translate(-1e-4)">
-				<path
-					id="rect9248-7-7-7-31"
-					style={{ fill: fill ? "#eeedfcff" : "#2f34fe" }}
-					d="M 1.005e-4,5.0000001e-7 V 9.9997005 h 5.0002 v 5.0002005 h -5.0002 V 24.9996 H 10 v -5.0001 h 5.0002 v 5.0001 h 9.999901 V 14.999901 H 19.9999 V 9.9997005 h 5.000201 V 5e-7 h -9.9999 v 5.0001 h -5.0002 V 5e-7 Z"
-				/>
-			</g>
-		)
-	}
-	{
-		type === "vital" && (
-			<g id="vital" style="display:inline" transform="translate(-1e-4)">
-				<path
-					id="rect9240-9-9-77"
-					style={{ fill: fill ? "#f8edfcff" : "#8e4ec6" }}
-					d="m 5e-7,5e-7 v 9.999899 h 5.0002 V 19.999799 H 10.0004 V 25 h 4.9997 v -5.000201 h 5.0002 V 9.9998995 H 25 V 5e-7 h -9.999899 v 9.999899 H 9.9999005 V 5e-7 Z"
-				/>
-			</g>
-		)
-	}
-	{
-		!type && (
-			<g id="vital-fallback" style="display:inline" transform="translate(-1e-4)">
-				<path
-					id="rect9240-9-9-77"
-					style={{ fill: fill ? "#f8edfcff" : "#8e4ec6" }}
-					d="m 5e-7,5e-7 v 9.999899 h 5.0002 V 19.999799 H 10.0004 V 25 h 4.9997 v -5.000201 h 5.0002 V 9.9998995 H 25 V 5e-7 h -9.999899 v 9.999899 H 9.9999005 V 5e-7 Z"
-				/>
-			</g>
-		)
-	}
+  <defs id="defs99540"></defs>
+  {
+    type === "bulb" && (
+      <g id="bulb" style="display:inline" transform="translate(-1e-4)">
+        <path
+          id="rect62209-6"
+          style={{ fill: fill ? "#fcedf1ff" : "#e4306a" }}
+          d="m 4.9997005,5e-7 v 5.0002 H 19.999801 V 5e-7 Z m 15.0001005,5.0002 v 4.9997 h 5.0002 v -4.9997 z m 0,4.9997 H 4.9997005 V 15.0001 H 19.999801 Z m -15.0001005,0 v -4.9997 H 5e-7 v 4.9997 z M 9.9999015,19.9998 V 25 h 4.9996995 v -5.0002 z"
+        />
+      </g>
+    )
+  }
+  {
+    type === "ward" && (
+      <g id="ward" style="display:inline" transform="translate(-1e-4)">
+        <path
+          id="rect8361-0-7"
+          style={{ fill: fill ? "#eefcf6" : "#01b477" }}
+          d="M 10.000201,5.0000001e-7 V 9.9997005 H 5e-7 V 14.999901 H 10.000201 V 24.9996 H 15.0005 v -5.0002 h 4.9998 V 14.999901 H 25 V 9.9997005 h -4.9997 v -4.9995 H 15.0005 V 5.0000001e-7 Z"
+        />
+      </g>
+    )
+  }
+  {
+    type === "ne" && (
+      <g id="ne" style="display:inline" transform="translate(-1e-4)">
+        <path
+          id="rect9248-7-7-7-31"
+          style={{ fill: fill ? "#eeedfcff" : "#2f34fe" }}
+          d="M 1.005e-4,5.0000001e-7 V 9.9997005 h 5.0002 v 5.0002005 h -5.0002 V 24.9996 H 10 v -5.0001 h 5.0002 v 5.0001 h 9.999901 V 14.999901 H 19.9999 V 9.9997005 h 5.000201 V 5e-7 h -9.9999 v 5.0001 h -5.0002 V 5e-7 Z"
+        />
+      </g>
+    )
+  }
+  {
+    type === "vital" && (
+      <g id="vital" style="display:inline" transform="translate(-1e-4)">
+        <path
+          id="rect9240-9-9-77"
+          style={{ fill: fill ? "#f8edfcff" : "#8e4ec6" }}
+          d="m 5e-7,5e-7 v 9.999899 h 5.0002 V 19.999799 H 10.0004 V 25 h 4.9997 v -5.000201 h 5.0002 V 9.9998995 H 25 V 5e-7 h -9.999899 v 9.999899 H 9.9999005 V 5e-7 Z"
+        />
+      </g>
+    )
+  }
+  {
+    !type && (
+      <g id="vital-fallback" style="display:inline" transform="translate(-1e-4)">
+        <path
+          id="rect9240-9-9-77"
+          style={{ fill: fill ? "#f8edfcff" : "#8e4ec6" }}
+          d="m 5e-7,5e-7 v 9.999899 h 5.0002 V 19.999799 H 10.0004 V 25 h 4.9997 v -5.000201 h 5.0002 V 9.9998995 H 25 V 5e-7 h -9.999899 v 9.999899 H 9.9999005 V 5e-7 Z"
+        />
+      </g>
+    )
+  }
 </svg>

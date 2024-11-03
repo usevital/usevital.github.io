@@ -1,6 +1,6 @@
 /* General page style */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #000;
   color: #f0f0f0;
   padding: 20px;
@@ -16,13 +16,13 @@ body {
 
 /* Footer styling */
 .footer {
-  color: #8E4EC6;
+  color: #8e4ec6;
   text-align: center;
   padding: 20px;
   margin-top: auto;
 }
 .find-us-buttons {
-  color: #8E4EC6;
+  color: #8e4ec6;
 }
 .find-us-buttons a {
   padding: 10px 20px;
@@ -67,27 +67,27 @@ a.open-source-notice {
 
 /* Vital block */
 .block.vital {
-  background-color: #8E4EC6;
+  background-color: #8e4ec6;
 }
 
 /* NotEssential block */
 .block.notessential {
-  background-color: #2F34FE;
+  background-color: #2f34fe;
 }
 
 /* Translator block */
 .block.translator {
-  background-color: #2F34FE;
+  background-color: #2f34fe;
 }
 
 /* Ward block */
 .block.ward {
-  background-color: #01B477;
+  background-color: #01b477;
 }
 
 /* Bulb block */
 .block.bulb {
-  background-color: #E4306A;
+  background-color: #e4306a;
 }
 
 /* Button styling */
@@ -96,19 +96,21 @@ a {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   margin: 5px;
   display: inline-block;
 }
 
 /* Vital Buttons */
 a.vital-modrinth {
-  background-color: #1BD96A;
-  color: #ECF9FB;
+  background-color: #1bd96a;
+  color: #ecf9fb;
 }
 a.vital-modrinth:hover {
-  background-color: #8E4EC6;
-  color: #1BD96A;
+  background-color: #8e4ec6;
+  color: #1bd96a;
 }
 a.vital-github {
   background-color: #000;
@@ -122,18 +124,18 @@ a.vital-github:hover {
 /* NotEssential buttons */
 a.notessential-site {
   background-color: #000;
-  color: #2F34FE;
+  color: #2f34fe;
 }
 a.notessential-site:hover {
-  background-color: #2F34FE;
+  background-color: #2f34fe;
   color: #000;
 }
 a.notessential-gallery {
   background-color: #000;
-  color: #2F34FE;
+  color: #2f34fe;
 }
 a.notessential-gallery:hover {
-  background-color: #2F34FE;
+  background-color: #2f34fe;
   color: #000;
 }
 a.notessential-source {
@@ -156,10 +158,10 @@ a.notessential-gallery-source:hover {
 /* Ward buttons */
 a.ward-site {
   background-color: #fff;
-  color: #01B477;
+  color: #01b477;
 }
 a.ward-site:hover {
-  background-color: #01B477;
+  background-color: #01b477;
   color: #fff;
 }
 a.ward-source {
