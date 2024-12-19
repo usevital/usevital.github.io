@@ -1,0 +1,85 @@
+---
+import Button from "../../components/Button.astro"
+import Logo from "../../components/Logo.astro"
+import Default from "../../layouts/Default.astro"
+---
+
+<Default>
+  <div class="flex h-full flex-col justify-center gap-2">
+    <div class="flex w-full flex-col">
+      <div class="flex w-full flex-col gap-2 border-b bg-gradient-to-bl from-black to-brand-purple-dark p-8">
+        <span class="flex flex-row items-center gap-2 text-4xl font-bold">Vital<Logo type="vital" /></span>
+        <span
+          >Vital is a modpack designed as an alternative to Essential (and OptiFine). It includes the majority of
+          Essential and OptiFine's features, including but not limited to: world hosting, cosmetics, many resource pack
+          features, shaders, and a major improvement in rendering and logic performance.</span
+        >
+        <div class="flex flex-row flex-wrap items-center gap-2">
+          <Button to="https://modrinth.com/modpack/vital/" external={true} showIcon={true}> Modrinth </Button>
+          <Button to="https://github.com/intergrav/vital/" external={true} showIcon={true}> GitHub </Button>
+        </div>
+      </div>
+      <div class="flex w-full flex-col gap-2 border-b bg-gradient-to-bl from-black to-brand-blue-dark p-8">
+        <span class="flex flex-row items-center gap-2 text-4xl font-bold">NotEssential<Logo type="ne" /></span>
+        <span>NotEssential is a website which links to mods that can substitute Essential's features.</span>
+
+        <div class="flex flex-row flex-wrap items-center gap-2">
+          <Button to="https://notessential.blurry.gay/" classList="bg-brand-blue" external={true} showIcon={true}>
+            Visit
+          </Button>
+          <Button
+            to="https://usevital.github.io/notessential-gallery/"
+            classList="bg-brand-blue"
+            external={true}
+            showIcon={true}>
+            Gallery
+          </Button>
+          <Button
+            to="https://github.com/usevital/notessential"
+            classList="bg-brand-blue"
+            external={true}
+            showIcon={true}>
+            GitHub
+          </Button>
+        </div>
+      </div>
+      <div class="grid w-full grid-cols-1 border-b md:grid-cols-2">
+        <div
+          class="flex w-full flex-col gap-2 bg-gradient-to-bl from-brand-background-secondary to-brand-green-dark p-8">
+          <span class="flex flex-row items-center gap-2 text-4xl font-bold">Ward<Logo type="ward" /></span>
+          <span>Ward is a simple text manipulator for the web. Made to do silly translations for NotEssential.</span>
+          <div class="flex flex-row flex-wrap items-center gap-2">
+            <Button to="https://ward.worldwidepixel.ca" classList="bg-brand-green" external={true} showIcon={true}>
+              Visit
+            </Button>
+            <Button to="https://github.com/usevital/ward" classList="bg-brand-green" external={true} showIcon={true}>
+              GitHub
+            </Button>
+          </div>
+        </div>
+        <div class="flex w-full flex-col gap-2 border-l bg-gradient-to-bl from-black to-cyan-900 p-8">
+          <span class="flex flex-row items-center gap-2 text-4xl font-bold"
+            >Translator<Logo fill={true} type="ward" /></span
+          >
+          <span>A Python script that can help you convert and manipulate your text in many different ways.</span>
+          <div class="flex flex-row flex-wrap items-center gap-2">
+            <Button
+              to="https://github.com/usevital/translator/releases"
+              classList="bg-cyan-700"
+              external={true}
+              showIcon={true}>
+              Releases
+            </Button>
+            <Button to="https://github.com/usevital/translator" classList="bg-cyan-700" external={true} showIcon={true}>
+              GitHub
+            </Button>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-full flex-col gap-2 border-b bg-gradient-to-bl from-black to-brand-rose-dark p-8">
+        <span class="flex flex-row items-center gap-2 text-4xl font-bold">Bulb<Logo type="bulb" /></span>
+        <span>Bulb is a work in progress. Watch this space.</span>
+      </div>
+    </div>
+  </div>
+</Default>
