@@ -21,7 +21,7 @@ const { title } = Astro.props
       name="description"
       content="Alternative to the Essential mod with world hosting features, free cosmetics, and much more!"
     />
-    <meta name="keywords" content="minecraft,notessential,vital,bulb,ward,text,fabric,modpack" />
+    <meta name="keywords" content="minecraft,notessential,vital,ward,text,fabric,modpack" />
     <meta name="robots" content="index" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
@@ -55,49 +55,42 @@ const { title } = Astro.props
             class="centre h-20 border-l bg-brand-green p-6 transition active:bg-brand-green-dark">
             <SizeAwareLogo fill={true} type="ward" />
           </a>
-          <a class="centre h-20 cursor-not-allowed border-l bg-brand-rose p-6 transition active:bg-brand-rose-dark">
-            <SizeAwareLogo fill={true} type="bulb" />
-            <span
-              class="text-md absolute rotate-6 select-none rounded-lg bg-brand-rose-dark bg-opacity-60 p-1 sm:text-lg"
-              >STAY TUNED</span
-            >
-          </a>
         </div>
       </div>
     </nav>
-    <main class="flex w-full flex-auto flex-row justify-center">
-      <div class="w-full max-w-[80rem] p-6">
-        <slot />
-      </div>
-    </main>
-    <footer class="flex w-full flex-row justify-center border-t">
-      <div class="w-full max-w-[80rem] px-6">
-        <div class="grid w-full grid-cols-1 border-x sm:grid-cols-2 lg:grid-cols-4">
-          <div class="flex flex-col gap-3 bg-brand-purple-dark p-6 [&>*]:fill-brand-purple-light">
-            <Logotype fill={true} />
-            <span class="flex flex-row flex-wrap items-center gap-1 text-brand-text-secondary">
-              This page is
-              <VitalLink showIcon={true} external={true} to="https://github.com/usevital/usevital.github.io">
-                open source.
-              </VitalLink>
-            </span>
-          </div>
-          <div class="flex flex-col gap-2 border-l bg-brand-blue-dark p-6">
-            <span class="font-bold">About</span>
-            We're a group of cool people making cool things.
-          </div>
-          <div class="flex flex-col gap-2 border-l bg-brand-green-dark p-6">
-            <span class="font-bold">Interact</span>
-            <VitalLink external={true} to="https://discord.gg/wncdz7e8jy"><MessageSquare />Discord</VitalLink>
-            <VitalLink external={true} to="https://github.com/usevital"><Github />GitHub</VitalLink>
-            <VitalLink external={true} to="https://usevital.github.io/uptime"><Activity />Status</VitalLink>
-          </div>
-          <div class="flex flex-col gap-2 border-l bg-brand-rose-dark p-6">
-            <span class="font-bold">Extra</span>
-            <span>&copy; 2024 Vital contributors</span>
-          </div>
+  </body>
+  <main class="flex w-full flex-auto flex-row justify-center">
+    <div class="w-full max-w-[80rem] p-6">
+      <slot />
+    </div>
+  </main>
+  <footer class="flex w-full flex-row justify-center border-t">
+    <div class="w-full max-w-[80rem] px-6">
+      <div class="grid w-full grid-cols-1 border-x sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col gap-3 bg-brand-purple-dark p-6 [&>*]:fill-brand-purple-light">
+          <Logotype fill={true} />
+          <span class="flex flex-row flex-wrap items-center gap-1 text-brand-text-secondary">
+            This page is
+            <VitalLink showIcon={true} external={true} to="https://github.com/usevital/usevital.github.io">
+              open source.
+            </VitalLink>
+          </span>
+        </div>
+        <div class="flex flex-col gap-2 border-l bg-brand-blue-dark p-6">
+          <span class="font-bold">About</span>
+          We're a group of cool people making cool things.
+        </div>
+        <div class="flex flex-col gap-2 border-l bg-brand-green-dark p-6">
+          <span class="font-bold">Interact</span>
+          <VitalLink external={true} to="https://discord.gg/wncdz7e8jy"><MessageSquare />Discord</VitalLink>
+          <VitalLink external={true} to="https://github.com/usevital"><Github />GitHub</VitalLink>
+          <VitalLink external={true} to="https://usevital.github.io/uptime"><Activity />Status</VitalLink>
+        </div>
+        <div class="flex flex-col gap-2 border-l bg-brand-purple-dark p-6">
+          <span class="font-bold">Extra</span>
+          <span>&copy; 2025 Vital contributors</span>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
 </html>
