@@ -30,10 +30,6 @@ export default {
         "brand-green": "#01b477",
         "brand-green-dark": "#1e5b46",
 
-        "brand-rose-light": "#f881a8",
-        "brand-rose": "#e4306a",
-        "brand-rose-dark": "#5b1e32",
-
         "logo-transparent-fill": "#fffffff5",
 
         "brand-background": "#0b0d0e",

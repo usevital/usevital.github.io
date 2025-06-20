@@ -85,11 +85,6 @@ a.open-source-notice {
   background-color: #01b477;
 }
 
-/* Bulb block */
-.block.bulb {
-  background-color: #e4306a;
-}
-
 /* Button styling */
 a {
   padding: 10px 20px;
@@ -189,14 +184,4 @@ a.translator-releases {
 a.translator-releases:hover {
   background-color: #fff;
   color: #000;
-}
-
-/* Bulb buttons (not being used yet) */
-a.bulb-comingsoon {
-  background-color: #ff6347;
-  color: #fff;
-}
-a.bulb-comingsoon:hover {
-  background-color: #fff;
-  color: #ff6347;
 }
